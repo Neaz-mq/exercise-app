@@ -56,7 +56,7 @@ const stretches = [
 
 const Stretches = () => {
   return (
-    <div className="bg-[#F6F6F6] mt-16 min-h-screen font-sans">
+    <div className="bg-[#F6F6F6] mt-16 min-h-screen">
       <div className="max-w-7xl mx-auto">
         <div className="px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
           {/* Heading */}
