@@ -1,6 +1,6 @@
 const Banner = () => {
   return (
-    <div className="bg-[#F6F6F6] md:mt-10 mt-16">
+    <div className="bg-[#F6F6F6] md:mt-10 mt-16 ">
       <div className="max-w-7xl mx-auto"> 
         <div className="px-4 sm:px-6 lg:px-8 p-6 sm:p-8 md:p-10 lg:p-12 rounded-lg flex flex-col md:flex-row items-center justify-between">
           
