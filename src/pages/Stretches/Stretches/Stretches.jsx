@@ -10,20 +10,55 @@ const bodyAreas = [
 ];
 
 const stretches = [
-  { title: "Standing Neck Stretch", level: "Beginner", area: "Neck", image: "/stretch.png" },
-  { title: "Standing Neck Stretch", level: "Beginner", area: "Neck", image: "/stretch.png" },
-  { title: "Standing Neck Stretch", level: "Beginner", area: "Neck", image: "/stretch.png" },
-  { title: "Standing Neck Stretch", level: "Beginner", area: "Neck", image: "/stretch.png" },
-  { title: "Standing Neck Stretch", level: "Beginner", area: "Neck", image: "/stretch.png" },
-  { title: "Standing Neck Stretch", level: "Beginner", area: "Neck", image: "/stretch.png" },
+  {
+    title: "Standing Neck Stretch",
+    level: "Beginner",
+    area: "Neck",
+    image:
+      "https://res.cloudinary.com/dxohwanal/image/upload/v1756553712/freepik--character-2--inject-57_tkidqy.png",
+  },
+  {
+    title: "Standing Neck Stretch",
+    level: "Beginner",
+    area: "Neck",
+    image:
+      "https://res.cloudinary.com/dxohwanal/image/upload/v1756553712/freepik--character-2--inject-57_tkidqy.png",
+  },
+  {
+    title: "Standing Neck Stretch",
+    level: "Beginner",
+    area: "Neck",
+    image:
+      "https://res.cloudinary.com/dxohwanal/image/upload/v1756553712/freepik--character-2--inject-57_tkidqy.png",
+  },
+  {
+    title: "Standing Neck Stretch",
+    level: "Beginner",
+    area: "Neck",
+    image:
+      "https://res.cloudinary.com/dxohwanal/image/upload/v1756553712/freepik--character-2--inject-57_tkidqy.png",
+  },
+  {
+    title: "Standing Neck Stretch",
+    level: "Beginner",
+    area: "Neck",
+    image:
+      "https://res.cloudinary.com/dxohwanal/image/upload/v1756553712/freepik--character-2--inject-57_tkidqy.png",
+  },
+  {
+    title: "Standing Neck Stretch",
+    level: "Beginner",
+    area: "Neck",
+    image:
+      "https://res.cloudinary.com/dxohwanal/image/upload/v1756553712/freepik--character-2--inject-57_tkidqy.png",
+  },
 ];
 
 const Stretches = () => {
   return (
-    <div className="bg-[#F6F6F6]  mt-16 min-h-screen">
+    <div className="bg-[#F6F6F6] mt-16 min-h-screen font-sans">
       <div className="max-w-7xl mx-auto">
-        <div className="px-4 sm:px-6 lg:px-8 py-32">
-          
+        <div className="px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
           {/* Heading */}
           <div className="text-center mb-10">
             <h2 className="text-2xl sm:text-3xl font-bold text-gray-800">
@@ -59,44 +94,60 @@ const Stretches = () => {
 
           {/* Stretches Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
-            {stretches.map((stretch, idx) => (
-              <div
-                key={idx}
-                className="flex items-center bg-white rounded-2xl shadow-sm border hover:border-green-400 transition overflow-hidden"
-              >
-                <div className="bg-[#dbe9cb] p-4 flex items-center justify-center">
-                  <img
-                    src={stretch.image}
-                    alt={stretch.title}
-                    className="h-20 w-20 object-contain"
-                  />
-                </div>
-                <div className="p-4 flex-1">
-                  <h4 className="font-semibold text-gray-800 text-base sm:text-lg">
-                    {stretch.title}
-                  </h4>
-                  <p className="text-gray-500 text-sm mt-1">
-                    {stretch.level} • {stretch.area}
-                  </p>
-                </div>
-                <button className="p-3 text-gray-400 hover:text-green-600">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    className="h-5 w-5"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M5 5v14l7-7 7 7V5z"
+            {stretches.map((stretch, idx) => {
+              const lastSpaceIndex = stretch.title.lastIndexOf(" ");
+              const firstPart = stretch.title.substring(0, lastSpaceIndex);
+              const secondPart = stretch.title.substring(lastSpaceIndex + 1);
+
+              return (
+                <div
+                  key={idx}
+                  className="flex bg-white rounded-lg shadow-sm border hover:border-green-400 transition overflow-hidden"
+                >
+                  {/* Left Image */}
+                  <div className="bg-[#e7f0dc] p-4 flex items-center justify-center">
+                    <img
+                      src={stretch.image}
+                      alt={stretch.title}
+                      className="h-20 w-20 object-contain"
                     />
-                  </svg>
-                </button>
-              </div>
-            ))}
+                  </div>
+
+                  {/* Right Content */}
+                  <div className="p-4 flex-1 flex flex-col justify-between">
+                    {/* Title + Bookmark in same row */}
+                    <div className="flex justify-between items-start">
+                      <h4 className="text-gray-800 text-sm sm:text-lg leading-tight">
+                        {firstPart}
+                        <br />
+                        {secondPart}
+                      </h4>
+                      <button className="p-2 text-gray-600 hover:text-green-600 self-start">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                          className="h-5 w-5"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M5 5v14l7-7 7 7V5z"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+
+                    {/* Level + Area */}
+                    <p className="text-gray-500 text-sm mt-1">
+                      {stretch.level} • {stretch.area}
+                    </p>
+                  </div>
+                </div>
+              );
+            })}
           </div>
 
           {/* View All Button */}
