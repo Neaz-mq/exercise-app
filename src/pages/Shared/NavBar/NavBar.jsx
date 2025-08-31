@@ -77,49 +77,59 @@ const NavBar = () => {
         </div>
       </div>
 
-      {/* Mobile Dropdown */}
+      {/* Mobile Dropdown - Trendy Version */}
       {isOpen && (
-        <div className="md:hidden bg-white shadow-md px-4 py-8 space-y-4 flex flex-col items-center justify-center ">
-          <Link to="/" className="block text-gray-800 hover:text-green-600">
-            Home
-          </Link>
-          <Link
-            to="/stretches"
-            className="block text-gray-800 hover:text-green-600"
-          >
-            Stretches
-          </Link>
-          <Link
-            to="/program"
-            className="block text-gray-800 hover:text-green-600"
-          >
-            My Program
-          </Link>
-          <Link
-            to="/testing"
-            className="block text-gray-800 hover:text-green-600"
-          >
-            Testing
-          </Link>
-          <Link
-            to="/rewards"
-            className="block text-gray-800 hover:text-green-600"
-          >
-            Rewards
-          </Link>
-
-          {/* Mobile Search + Profile */}
-          <div className="mt-4 flex items-center space-x-3">
-            <div className="relative flex-1">
-              <input
-                type="text"
-                placeholder="Search"
-                className="w-full pl-3 pr-8 py-1 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-400"
-              />
-              <Search className="absolute right-2 top-1/2 -translate-y-1/2 text-gray-500 h-4 w-4" />
+        <div className="md:hidden bg-white shadow-md p-6 absolute w-full top-16 left-0 animate-fade-in-down transform origin-top transition-transform ease-out duration-300">
+          <div className="flex flex-col items-center space-y-4">
+            {/* Search + Profile */}
+            <div className="w-full flex items-center space-x-3">
+              <div className="relative flex-1">
+                <input
+                  type="text"
+                  placeholder="Search"
+                  className="w-full pl-4 pr-10 py-2 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#7DC33B] text-sm transition-all duration-300"
+                />
+                <Search className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-500 h-4 w-4" />
+              </div>
+              <div className="bg-[#BFDD9C] text-[#7DC33B] rounded-full p-3">
+                <User className="h-5 w-5" />
+              </div>
             </div>
-            <div className="bg-[#7DC33B] text-green-900 rounded-full p-2">
-              <User className="h-5 w-5" />
+
+            <div className="w-full h-px bg-gray-200 my-4"></div>
+
+            {/* Menu Links */}
+            <div className="flex flex-col space-y-6 text-center w-full">
+              <Link
+                to="/"
+                className="text-lg font-semibold text-gray-800 hover:text-[#7DC33B] transition duration-300"
+              >
+                Home
+              </Link>
+              <Link
+                to="/stretches"
+                className="text-lg font-semibold text-gray-800 hover:text-[#7DC33B] transition duration-300"
+              >
+                Stretches
+              </Link>
+              <Link
+                to="/program"
+                className="text-lg font-semibold text-gray-800 hover:text-[#7DC33B] transition duration-300"
+              >
+                My Program
+              </Link>
+              <Link
+                to="/testing"
+                className="text-lg font-semibold text-gray-800 hover:text-[#7DC33B] transition duration-300"
+              >
+                Testing
+              </Link>
+              <Link
+                to="/rewards"
+                className="text-lg font-semibold text-gray-800 hover:text-[#7DC33B] transition duration-300"
+              >
+                Rewards
+              </Link>
             </div>
           </div>
         </div>
