@@ -83,7 +83,7 @@ const DashboardCards = () => {
               <p className="text-base text-gray-700 mt-4">
                 Relieve tightness with a gentle hamstring stretch routine.
               </p>
-              <div className="flex items-center justify-center space-x-4 mt-3">
+              <div className="flex items-center justify-center space-x-4 mt-6">
                 {[
                   { icon: "/rating.png", active: true },
                   { icon: "/award.png", active: false },
@@ -117,7 +117,7 @@ const DashboardCards = () => {
                 ))}
               </div>
             </div>
-            <button className="mt-2 w-full px-6 py-3 text-center text-gray-600 font-semibold rounded-full border bg-[#cfebae] border-gray-300 hover:bg-gray-100 transition duration-300">
+            <button className="mt-6 w-full px-6 py-3 text-center text-gray-600 font-semibold rounded-full border bg-[#cfebae] border-gray-300 hover:bg-gray-100 transition duration-300">
               View All Badges
             </button>
           </Card>
@@ -126,13 +126,13 @@ const DashboardCards = () => {
           <Card>
             <div className="flex flex-col flex-grow">
               <h3 className="text-2xl text-gray-800">Today's Stretch</h3>
-              <div className="mt-4 w-full bg-[#ebf5e0] rounded-lg p-10 flex flex-col items-center">
+              <div className="mt-4 w-full bg-[#ebf5e0] rounded-lg p-6 flex flex-col items-center">
                 <div className="w-full flex space-x-2">
                   <div>
-                    <h4 className="font-medium text-lg text-gray-800">
+                    <h4 className="font-normal text-xl text-gray-800">
                       Today's Stretch: Hamstring Flow
                     </h4>
-                    <p className="text-sm text-gray-600 mt-3">
+                    <p className="text-base text-gray-600 mt-6">
                       Relieve tightness with a gentle hamstring stretch routine.
                     </p>
                   </div>
@@ -155,7 +155,7 @@ const DashboardCards = () => {
                 </div>
               </div>
             </div>
-            <button className="w-full px-6 py-3 bg-[#7DC33B] text-white font-semibold rounded-full hover:bg-green-700 transition duration-300 ease-in-out shadow-lg">
+            <button className="mt-6 w-full px-6 py-3 bg-[#7DC33B] text-white font-semibold rounded-full hover:bg-green-700 transition duration-300 ease-in-out shadow-lg">
               Start Stretch
             </button>
           </Card>
