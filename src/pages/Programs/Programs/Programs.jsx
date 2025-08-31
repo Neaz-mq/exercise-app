@@ -101,7 +101,7 @@ const Programs = () => {
         </div>
         <p className="text-xs text-gray-600 mb-4 mt-3">{program.description}</p>
         <div className="flex justify-start gap-2">
-          <button className="flex items-center gap-1 py-1 px-4 bg-gray-100 text-gray-700 text-sm rounded-full hover:bg-gray-200 transition">
+          <button className="flex items-center gap-1 py-1 px-2 bg-gray-100 text-gray-700 text-[0.8rem] rounded-full hover:bg-gray-200 transition">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="w-4 h-4"
@@ -118,10 +118,10 @@ const Programs = () => {
             </svg>
             View
           </button>
-          <button className="flex items-center gap-2 py-1 px-4 bg-[#7DC33B] text-white text-sm rounded-full hover:bg-green-600 transition">
+          <button className="flex items-center gap-1 py-1 px-2 bg-[#7DC33B] text-white text-[0.8rem] rounded-full hover:bg-green-600 transition">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="w-4 h-4"
+              className="w-3 h-3"
               fill="white"
               viewBox="0 0 24 24"
               stroke="white"
@@ -146,16 +146,23 @@ const Programs = () => {
 
   const ProgramSection = ({ title, programs }) => (
     <div className="mt-8">
-      <div className="flex justify-between items-center mb-4">
-        <h2 className="text-xl text-gray-900">{title}</h2>
-        <a href="#" className="text-sm   hover:text-green-700">
+      <div className="flex flex-col sm:flex-row justify-between items-center mb-4">
+        <h2 className="text-xl text-gray-900 mb-2 sm:mb-0 text-center sm:text-left">
+          {title}
+        </h2>
+        <a href="#" className="text-sm hover:text-green-700 sm:block hidden">
           View All
         </a>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {programs.map((program, index) => (
           <ProgramCard key={index} program={program} />
         ))}
+      </div>
+      <div className="flex justify-center mt-4 sm:hidden">
+        <a href="#" className="text-sm hover:text-green-700">
+          View All
+        </a>
       </div>
     </div>
   );
