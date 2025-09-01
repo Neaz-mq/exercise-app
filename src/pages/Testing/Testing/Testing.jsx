@@ -21,7 +21,7 @@ const Testing = () => {
 
   return (
     <div className='flex justify-center items-start bg-[#F6F6F6] mt-16 min-h-screen p-4 '>
-      <div className='2xl:max-w-6xl xl:max-w-5xl lg:max-w-4xl md:max-w-3xl  w-full mt-24'>
+      <div className='2xl:max-w-6xl xl:max-w-5xl lg:max-w-4xl md:max-w-3xl  w-full mt-16'>
         {/* Header */}
         <div className='bg-[#f4faed] p-10 rounded-lg shadow-sm mb-10'>
           <div className='flex items-start'>
