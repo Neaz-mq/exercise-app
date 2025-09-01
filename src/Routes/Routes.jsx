@@ -6,6 +6,7 @@ import Home from "../pages/Home/Home/Home";
 import Stretches from "../pages/Stretches/Stretches/Stretches";
 import Programs from "../pages/Programs/Programs/Programs";
 import Testing from "../pages/Testing/Testing/Testing";
+import Rewards from "../pages/Rewards/Rewards/Rewards";
 
 
 export const router = createBrowserRouter([
@@ -28,6 +29,10 @@ export const router = createBrowserRouter([
         {
             path:'/testing',
             element: <Testing></Testing>
+        },
+        {
+            path:'/rewards',
+            element: <Rewards></Rewards>
         },
     ]
   },
