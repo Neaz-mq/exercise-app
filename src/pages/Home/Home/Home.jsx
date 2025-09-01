@@ -4,7 +4,7 @@ import DashboardCards from "../DashboardCards/DashboardCards";
 
 const Home = () => {
     return (
-        <div>
+        <div className="bg-[#F6F6F6]">
            <Banner></Banner>
            <DashboardCards></DashboardCards>
         </div>

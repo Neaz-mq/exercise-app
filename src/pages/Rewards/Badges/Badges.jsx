@@ -1,6 +1,6 @@
 const Badges = () => {
   return (
-    <div className="flex justify-center items-start bg-[#F6F6F6] min-h-screen p-4">
+    <div className="flex justify-center items-start  p-4">
       <div className="2xl:max-w-6xl xl:max-w-5xl lg:max-w-4xl md:max-w-3xl sm:max-w-2xl w-full mt-24">
         <div className="bg-[#f4faed] p-8 sm:p-10 md:p-12 rounded-lg shadow-sm flex flex-col items-center">
           
