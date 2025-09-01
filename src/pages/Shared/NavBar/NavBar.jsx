@@ -12,8 +12,7 @@ const NavBar = () => {
     { to: "/stretches", label: "Stretches" },
     { to: "/program", label: "My Program" },
     { to: "/testing", label: "Testing" },
-    { to: "/rewards", label: "Rewards" },
-  
+    { to: "/rewards", label: "Rewards" },  
   ];
 
   return (
