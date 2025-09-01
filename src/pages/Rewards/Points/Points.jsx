@@ -9,7 +9,7 @@ const historyData = [
 const Points = () => {
     return (
         <div className="flex justify-center items-start p-4">
-            <div className="2xl:max-w-6xl xl:max-w-5xl lg:max-w-4xl md:max-w-3xl sm:max-w-2xl w-full mt-24">
+            <div className="2xl:max-w-6xl xl:max-w-5xl lg:max-w-4xl md:max-w-3xl sm:max-w-2xl w-full mt-24 mb-10">
                 <h2 className="text-3xl text-zinc-600 mb-6">Points History</h2>
 
                 <div className="bg-white p-6 md:p-8 rounded-lg shadow-sm">
