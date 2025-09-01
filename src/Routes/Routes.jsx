@@ -7,6 +7,7 @@ import Stretches from "../pages/Stretches/Stretches/Stretches";
 import Programs from "../pages/Programs/Programs/Programs";
 import Testing from "../pages/Testing/Testing/Testing";
 import Rewards from "../pages/Rewards/Rewards/Rewards";
+import Sign from "../pages/Sign/Sign";
 
 
 export const router = createBrowserRouter([
@@ -33,6 +34,10 @@ export const router = createBrowserRouter([
         {
             path:'/rewards',
             element: <Rewards></Rewards>
+        },
+        {
+            path:'/sign-in',
+            element: <Sign></Sign>
         },
     ]
   },
