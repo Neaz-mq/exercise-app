@@ -21,7 +21,7 @@ const Testing = () => {
 
   return (
     <div className='flex justify-center items-start bg-[#F6F6F6] mt-16 min-h-screen p-4 '>
-      <div className='max-w-6xl w-full mt-24'>
+      <div className='2xl:max-w-6xl xl:max-w-5xl lg:max-w-4xl md:max-w-3xl  w-full mt-24'>
         {/* Header */}
         <div className='bg-[#f4faed] p-10 rounded-lg shadow-sm mb-10'>
           <div className='flex items-start'>
@@ -67,9 +67,9 @@ const Testing = () => {
 
               {/* Content */}
               <div className='-translate-y-10 p-6 text-center flex flex-col  flex-grow bg-white z-20'>
-                <h3 className='text-lg font-semibold text-gray-800 mb-4'>
-                  {test.title}
-                </h3>
+              <h3 className='text-base font-semibold text-gray-800 mb-4 mr-1  '>
+    {test.title}
+  </h3>
                 <button
                   className={` mt-6 w-full font-semibold py-2 px-4 rounded-lg transition duration-300 ${
                     test.isPrimary
