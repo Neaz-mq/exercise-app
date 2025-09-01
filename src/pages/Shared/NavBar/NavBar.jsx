@@ -13,6 +13,7 @@ const NavBar = () => {
     { to: "/program", label: "My Program" },
     { to: "/testing", label: "Testing" },
     { to: "/rewards", label: "Rewards" },
+    { to: "/sign-in", label: "Sign In" },
   ];
 
   return (
@@ -57,11 +58,13 @@ const NavBar = () => {
               />
               <Search className="absolute right-2 top-1/2 -translate-y-1/2 text-gray-500 h-4 w-3" />
             </div>
+           <Link to="/sign-in">
             <div className="bg-[#BFDD9C] rounded-full p-2">
               <div className="bg-[#BFDD9C] text-[#7DC33B] rounded-full p-0">
                 <User className="h-5 w-5" />
               </div>
             </div>
+           </Link>
           </div>
 
           {/* Mobile Menu Button */}
